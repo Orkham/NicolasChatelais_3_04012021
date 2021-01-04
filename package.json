@@ -1,0 +1,20 @@
+{
+  "name": "p3_dynamisez_une_page_web_avec_des_animations_css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./style/sass/main.scss:./style/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Orkham/NicolasChatelais_3_04012021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Orkham/NicolasChatelais_3_04012021/issues"
+  },
+  "homepage": "https://github.com/Orkham/NicolasChatelais_3_04012021#readme"
+}
