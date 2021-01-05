@@ -19,15 +19,19 @@
 
     <header>
         <h1>ohmyfood</h1>
-
-        <div>
-            <i class="fas fa-map-marker-alt"></i>
-            <p>Paris, Belleville</p>
-        </div>
     </header>
 
     <section>
-        <h2>Réservez le menu qui vous convient</h2>
+        <form method="POST" action="#" class="searcher">
+            <label for="search">
+                <i class="fas fa-map-marker-alt"></i>
+            </label>
+                <input type="search" name="search" id="search" value="Paris, Belleville">
+        </form>
+    </section>
+
+    <section class="presentation">
+        <h2 class="presentation__title">Réservez le menu qui vous convient</h2>
         <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
         <a href="#">Explorer nos restaurants</a>
     </section>

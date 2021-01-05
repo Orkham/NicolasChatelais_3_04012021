@@ -1,20 +1,12 @@
-@import "./utils/variables";
-@import "./utils/functions";
-@import "./utils/mixins";
-@import "./utils/extensions";
-@import "./base/base";
-@import "./base/typography";
-@import "./components/buttons";
-@import "./layouts/header";
-@import "./layouts/nav";
-@import "./layouts/container";
-@import "./layouts/form";
-
-body{
-    max-width: 1600px;
-    margin: 0 auto;
-}
-
-h1,h4{
-    font-family: 'Shrikhand', cursive;
-}
+@import "./Utils/variables";
+@import "./Utils/functions";
+@import "./Utils/mixins";
+@import "./Utils/extensions";
+@import "./Base/typography";
+@import "./Base/base";
+@import "./Components/buttons";
+@import "./Layouts/header";
+@import "./Layouts/nav";
+@import "./Layouts/container";
+@import "./Layouts/form";
+@import "./Pages/presentation";
