@@ -1,0 +1,13 @@
+.new-card{
+    position: absolute;
+    top: 1rem;
+    left: 14.3rem;
+    padding: 0.5rem 1rem 0.5rem;
+    background-color: $tertiary-color;
+    border-radius: 3px;
+    color: #028867;
+}
+
+a:nth-child(n+4) article .new-card{
+    display: none;
+}

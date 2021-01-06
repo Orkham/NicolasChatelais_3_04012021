@@ -1,0 +1,30 @@
+a{
+    
+    article{
+        width:90%;
+        margin: 5%;
+        background-color: white;
+        border-radius: 1rem;
+        position: relative;
+        box-shadow: 2px 2px 5px 1px $tertiary-color;
+        img{
+            object-fit: cover;
+            width:100%;
+            border-radius: 1rem 1rem 0 0;
+            height: 11rem;
+        }
+    }
+
+    .res-description{
+        display: flex;
+        justify-content: space-between;
+        &__title{
+            margin: 1rem;
+        }
+        i{
+            @include heart-i
+        }
+    }
+}
+
+

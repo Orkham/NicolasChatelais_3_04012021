@@ -1,8 +1,9 @@
 .presentation{
-    margin: 2rem;
+    padding: 2rem;
     display: flex;
     align-items: center;
     flex-direction: column;
+    background-color: #f6f6f6;
     &__title{
         text-align: center;
         margin: 1rem;
@@ -12,9 +13,14 @@
         margin: 1rem;
     }
     a{
-        border: 1rem solid $primary-color;
-        background-color: $primary-color;
+        background: linear-gradient($secondary-color,$primary-color);
         color:#fff;
         border-radius: 2rem;
+        padding: 1rem;
+        margin-bottom: 2rem;
+        box-shadow: 2px 2px 5px 1px $tertiary-color;
+    }
+    h2{
+        margin: 3rem 0 2rem 1rem;
     }
 }
