@@ -84,6 +84,43 @@ a:nth-child(n+4) article .new-card {
   display: none;
 }
 
+.empty-heart {
+  position: absolute;
+  top: 3rem;
+  left: 56rem;
+  opacity: 1;
+}
+.empty-heart:hover {
+  cursor: pointer;
+}
+
+.full-heart {
+  position: absolute;
+  top: 3rem;
+  left: 56rem;
+  opacity: 0;
+  z-index: 10;
+}
+.full-heart:hover {
+  cursor: pointer;
+}
+
+.fa-heart:hover {
+  background: black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fas.fa-heart:hover {
+  width: auto;
+  opacity: 1;
+  z-index: 0;
+}
+
+.far.fa-heart:hover {
+  opacity: 0;
+}
+
 h1 {
   display: flex;
   justify-content: space-around;
@@ -240,15 +277,41 @@ main {
   background-color: white;
   padding: 0.5rem;
   border-radius: 15px;
+  box-shadow: 2px 2px 5px 1px #99E2D0;
 }
 .dish .recipe__details p {
   margin: 0.4rem 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 15rem;
+  white-space: nowrap;
 }
 .dish .recipe__price {
   align-items: flex-end;
   display: flex;
   margin-bottom: 0.4rem;
   margin-right: 0.5rem;
+}
+
+.purple-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.purple-button a {
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: #fff;
+  border-radius: 2rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 2px 2px 5px 1px #99E2D0;
+  display: flex;
+  justify-content: center;
+  width: 40%;
+}
+.purple-button a:hover {
+  background: linear-gradient(#ff93e1, #a16be0);
+  box-shadow: 2px 2px 5px 2px #99E2D0;
 }
 
 /*# sourceMappingURL=style.css.map */

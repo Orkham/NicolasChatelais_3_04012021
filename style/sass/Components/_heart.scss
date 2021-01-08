@@ -1,0 +1,38 @@
+.empty-heart{
+    position: absolute; 
+    top: 3rem;
+    left:56rem;
+    opacity:1;
+    &:hover{
+        cursor:pointer;
+    }
+}
+
+.full-heart{
+    position: absolute; 
+    top: 3rem;
+    left:56rem;
+    opacity: 0;
+    z-index: 10;
+    &:hover{
+        cursor:pointer;
+    }
+}
+
+.fa-heart:hover
+{
+    background:black;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.fas.fa-heart:hover
+{
+    width: auto;
+    opacity: 1;
+    z-index: 0;
+}
+.far.fa-heart:hover
+{
+    opacity: 0;
+}
+
