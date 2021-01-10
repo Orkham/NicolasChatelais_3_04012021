@@ -84,41 +84,41 @@ a:nth-child(n+4) article .new-card {
   display: none;
 }
 
-.empty-heart {
+.heart {
   position: absolute;
-  top: 3rem;
-  left: 56rem;
-  opacity: 1;
+  top: 2.3rem;
+  right: -0.5rem;
 }
-.empty-heart:hover {
+.heart:hover {
   cursor: pointer;
 }
 
-.full-heart {
-  position: absolute;
-  top: 3rem;
-  left: 56rem;
-  opacity: 0;
-  z-index: 10;
+.empty {
+  color: #9356dc;
 }
-.full-heart:hover {
-  cursor: pointer;
+.empty:hover {
+  color: rgba(147, 86, 220, 0);
+  z-index: 1;
 }
 
-.fa-heart:hover {
-  background: black;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.full {
+  color: rgba(147, 86, 220, 0);
+  transition: color 1s;
+}
+.full:hover {
+  color: #9356dc;
+  z-index: 2;
 }
 
-.fas.fa-heart:hover {
-  width: auto;
-  opacity: 1;
-  z-index: 0;
-}
-
-.far.fa-heart:hover {
-  opacity: 0;
+.fa-check-circle {
+  color: white;
+  background: #99E2D0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 18%;
+  border-radius: 0 15px 15px 0;
+  display: none;
 }
 
 h1 {
@@ -275,22 +275,29 @@ main {
   justify-content: space-between;
   margin-top: 1rem;
   background-color: white;
-  padding: 0.5rem;
   border-radius: 15px;
   box-shadow: 2px 2px 5px 1px #99E2D0;
 }
+.dish .recipe__details {
+  padding: 0.5rem;
+}
 .dish .recipe__details p {
-  margin: 0.4rem 0;
+  margin: 0.4rem 0 0 0;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 15rem;
+  width: 13rem;
   white-space: nowrap;
 }
 .dish .recipe__price {
+  padding: 0.5rem;
   align-items: flex-end;
   display: flex;
-  margin-bottom: 0.4rem;
-  margin-right: 0.5rem;
+}
+.dish .recipe:hover {
+  cursor: pointer;
+}
+.dish .recipe:hover .fa-check-circle {
+  display: flex;
 }
 
 .purple-button {

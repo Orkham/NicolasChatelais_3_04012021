@@ -30,6 +30,7 @@ main{
     }
     i{
         @include heart-i;
+
     }
 }
 
@@ -48,23 +49,28 @@ main{
         justify-content: space-between;
         margin-top:1rem;
         background-color: white;
-        padding:0.5rem;
         border-radius: 15px;
         box-shadow: 2px 2px 5px 1px $tertiary-color;
         &__details{
+            padding:0.5rem;
             p{
-                margin: 0.4rem 0;
+                margin: 0.4rem 0 0 0;
                 overflow: hidden;
                 text-overflow: ellipsis; 
-                width:15rem;
+                width:13rem;
                 white-space: nowrap;
             }
         }
         &__price{
+            padding:0.5rem;
             align-items: flex-end;
             display: flex;
-            margin-bottom: 0.4rem;
-            margin-right:0.5rem;
+        }
+        &:hover{
+            cursor: pointer;
+            .fa-check-circle{
+                display: flex;
+            }
         }
     }
 }
