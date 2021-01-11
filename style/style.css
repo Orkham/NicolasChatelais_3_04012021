@@ -28,6 +28,69 @@ a {
   background-color: #f6f6f6;
 }
 
+.loadingio-spinner-cube-h4lx6co5rxs {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 10001;
+  background: #99E2D0;
+  animation: 3s loader-opacity forwards;
+}
+
+@keyframes loader-opacity {
+  0% {
+    opacity: 0.9;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+    visibility: hidden;
+  }
+}
+@keyframes ldio-3fqy2wz3mdj {
+  0% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.ldio-3fqy2wz3mdj div {
+  width: 80px;
+  height: 80px;
+  background: #9356DC;
+  animation: ldio-3fqy2wz3mdj 1s cubic-bezier(0, 0.5, 0.5, 1) 4;
+  animation-delay: 0s;
+}
+
+.ldio-3fqy2wz3mdj div:nth-child(2) {
+  background: #a16be0;
+  animation-delay: 0.1s;
+}
+
+.ldio-3fqy2wz3mdj div:nth-child(3) {
+  background: #ae80e5;
+  animation-delay: 0.2s;
+}
+
+.ldio-3fqy2wz3mdj div:nth-child(4) {
+  background: #bc95e9;
+  animation-delay: 0.3s;
+}
+
+.ldio-3fqy2wz3mdj {
+  position: relative;
+  transform: translateZ(0) scale(1);
+  backface-visibility: hidden;
+  transform-origin: 0 0;
+  display: flex;
+  justify-content: center;
+  top: 50%;
+}
+
 .fonctionnement {
   display: flex;
   flex-direction: column;
@@ -113,12 +176,10 @@ a:nth-child(n+4) article .new-card {
 .fa-check-circle {
   color: white;
   background: #99E2D0;
-  display: flex;
   justify-content: center;
   align-items: center;
-  width: 18%;
+  width: 0%;
   border-radius: 0 15px 15px 0;
-  display: none;
 }
 
 h1 {
@@ -259,6 +320,14 @@ main {
   font-size: 1.5rem;
 }
 
+@keyframes slide-vertical {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .dish {
   margin: 1rem;
 }
@@ -271,25 +340,50 @@ main {
   margin: 0.3rem 0;
 }
 .dish .recipe {
+  /*** slide ***/
+  opacity: 0;
+  animation: slide-vertical 500ms;
+  animation-fill-mode: forwards;
+  /*** ***/
   display: flex;
   justify-content: space-between;
   margin-top: 1rem;
   background-color: white;
   border-radius: 15px;
+  font-size: 1rem;
   box-shadow: 2px 2px 5px 1px #99E2D0;
+  overflow: hidden;
+}
+.dish .recipe:nth-child(3) {
+  animation-delay: 600ms;
+}
+.dish .recipe:nth-child(4) {
+  animation-delay: 800ms;
+}
+.dish .recipe:nth-child(5) {
+  animation-delay: 1000ms;
 }
 .dish .recipe__details {
   padding: 0.5rem;
+  width: 85%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.dish .recipe__details h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .dish .recipe__details p {
   margin: 0.4rem 0 0 0;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 13rem;
   white-space: nowrap;
+  font-size: 0.95rem;
 }
 .dish .recipe__price {
-  padding: 0.5rem;
+  padding: 0.5rem 1rem 0.5rem 0;
   align-items: flex-end;
   display: flex;
 }
@@ -298,6 +392,12 @@ main {
 }
 .dish .recipe:hover .fa-check-circle {
   display: flex;
+  width: 20%;
+  transition: width 1s;
+}
+.dish .recipe:hover .fa-check-circle::before {
+  transform: rotate(360deg);
+  transition: transform 1s;
 }
 
 .purple-button {

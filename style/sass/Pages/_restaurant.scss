@@ -33,7 +33,18 @@ main{
 
     }
 }
+$anim-speed: 500ms;
 
+@keyframes slide-vertical{
+    0%{
+        
+        opacity:0;
+    }
+    100%{
+        
+        opacity:1;
+    }
+}
 .dish{
     margin: 1rem;
     h2{
@@ -44,25 +55,48 @@ main{
         border: 1.5px solid $tertiary-color;
         margin: 0.3rem 0;
     }
+    
     .recipe{
+        
+        /*** slide ***/
+        opacity:0;
+        animation: slide-vertical 500ms; 
+        animation-fill-mode:forwards;
+            @for $i from 3 through 5{
+                &:nth-child(#{$i}){
+                animation-delay: $i * 200ms; 
+            }
+        }
+        /*** ***/
         display:flex;
         justify-content: space-between;
         margin-top:1rem;
         background-color: white;
         border-radius: 15px;
+        font-size: 1rem;
         box-shadow: 2px 2px 5px 1px $tertiary-color;
+        overflow: hidden;
         &__details{
             padding:0.5rem;
+            width: 85%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            h3{
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
             p{
                 margin: 0.4rem 0 0 0;
                 overflow: hidden;
                 text-overflow: ellipsis; 
-                width:13rem;
                 white-space: nowrap;
+                font-size: 0.95rem;
             }
         }
         &__price{
-            padding:0.5rem;
+            padding:0.5rem 1rem 0.5rem 0;
             align-items: flex-end;
             display: flex;
         }
@@ -70,6 +104,12 @@ main{
             cursor: pointer;
             .fa-check-circle{
                 display: flex;
+                width : 20%;
+                transition: width 1s;
+                &::before{
+                    transform: rotate(360deg);
+                    transition: transform 1s;
+                }
             }
         }
     }
