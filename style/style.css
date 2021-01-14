@@ -313,6 +313,10 @@ header a {
   top: 2rem;
   left: 1rem;
 }
+header img {
+  object-fit: cover;
+  height: 30vh;
+}
 
 main {
   background-color: #f6f6f6;
