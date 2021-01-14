@@ -9,5 +9,9 @@
         background-color: #eaeaea;
         border: none;
         padding-left:1rem;
+        &:focus{
+            outline: 0;
+        }
+        
     }
 }
