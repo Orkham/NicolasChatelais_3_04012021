@@ -4,6 +4,10 @@ footer{
     .wrapper{
         margin:0 2rem; 
         color:white;
+        .responsiveDisplay{
+            display:flex;
+            flex-direction: column;
+        }
         a{
             color:white;
         }
@@ -25,4 +29,21 @@ footer{
         
     }
 
+}
+
+@media screen and (min-width: 960px){
+    footer{
+        padding-bottom: 0;
+        .wrapper{
+            h4{
+                display: flex;
+                margin:0.5rem 0;
+                justify-content: center;
+            }
+            .responsiveDisplay{
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+    }
 }

@@ -5,6 +5,10 @@
 }
 
 body {
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
   font-family: Roboto;
 }
 body h1, body h4 {
@@ -28,6 +32,14 @@ a {
   background-color: #f6f6f6;
 }
 
+@media screen and (min-width: 960px) {
+  .responsiveDisplay {
+    display: flex;
+  }
+  .responsiveDisplay .presentation, .responsiveDisplay .fonctionnementSection {
+    width: 49%;
+  }
+}
 @keyframes loader-opacity {
   0% {
     opacity: 0.9;
@@ -223,6 +235,10 @@ footer .wrapper {
   margin: 0 2rem;
   color: white;
 }
+footer .wrapper .responsiveDisplay {
+  display: flex;
+  flex-direction: column;
+}
 footer .wrapper a {
   color: white;
 }
@@ -242,6 +258,20 @@ footer .wrapper a div:nth-child(1) i, footer .wrapper div:nth-child(2) i {
   margin-right: 0.5rem;
 }
 
+@media screen and (min-width: 960px) {
+  footer {
+    padding-bottom: 0;
+  }
+  footer .wrapper h4 {
+    display: flex;
+    margin: 0.5rem 0;
+    justify-content: center;
+  }
+  footer .wrapper .responsiveDisplay {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 .presentation {
   padding: 2rem;
   display: flex;
@@ -288,6 +318,9 @@ a article img {
   border-radius: 1rem 1rem 0 0;
   height: 11rem;
 }
+a article .heart {
+  top: 12.3rem;
+}
 a .res-description {
   display: flex;
   justify-content: space-between;
@@ -302,10 +335,19 @@ a .res-description i {
   font-size: 1.5rem;
 }
 
-article .heart {
-  top: 12.3rem;
+@media screen and (min-width: 960px) {
+  .coloredBack {
+    display: inline-block;
+    width: 100%;
+  }
+  .coloredBack h2 {
+    text-align: center;
+  }
+  .coloredBack a {
+    width: 49%;
+    display: inline-block;
+  }
 }
-
 header {
   display: flex;
   flex-direction: column;

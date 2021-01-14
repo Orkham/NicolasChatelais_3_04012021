@@ -13,6 +13,9 @@ a{
             border-radius: 1rem 1rem 0 0;
             height: 11rem;
         }
+        .heart {
+            top: 12.3rem;
+        } 
     }
 
     .res-description{
@@ -26,11 +29,17 @@ a{
         }
     }
 }
-
-article{
-    .heart {
-        top: 12.3rem;
-    } 
+@media screen and (min-width: 960px){
+    .coloredBack{
+        display: inline-block;
+        width: 100%;
+        h2{
+            text-align: center;
+        }
+        a{
+            width:49%;
+            display: inline-block;
+        }
+    }
 }
-
 
