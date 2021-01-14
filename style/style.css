@@ -24,7 +24,7 @@ a {
   margin: 3rem 0 0 1.2rem;
 }
 
-.colored-back {
+.coloredBack {
   background-color: #f6f6f6;
 }
 
@@ -193,6 +193,10 @@ header h1 {
   justify-content: space-around;
   margin: 1rem;
 }
+header .logo {
+  object-fit: none;
+  height: 10vh;
+}
 
 .searcher {
   width: 100%;
@@ -328,9 +332,9 @@ main {
   position: relative;
   border-radius: 25px 25px 0 0;
   border: 1px solid #f6f6f6;
-  background-color: transparent;
+  background-color: #f6f6f6;
   padding-top: 1rem;
-  margin-top: -3rem;
+  margin-top: -2rem;
 }
 .restaurant-title h2 {
   margin: 1rem;

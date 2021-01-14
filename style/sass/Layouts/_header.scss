@@ -3,7 +3,10 @@ header{
         display: flex;
         justify-content: space-around;
         margin: 1rem;
-        
+    }
+    .logo{
+        object-fit: none;
+        height:10vh;
     }
 }
 
