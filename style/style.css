@@ -28,15 +28,6 @@ a {
   background-color: #f6f6f6;
 }
 
-.loadingio-spinner-cube-h4lx6co5rxs {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: 10001;
-  background: #99E2D0;
-  animation: 3s loader-opacity forwards;
-}
-
 @keyframes loader-opacity {
   0% {
     opacity: 0.9;
@@ -50,7 +41,7 @@ a {
     visibility: hidden;
   }
 }
-@keyframes ldio-3fqy2wz3mdj {
+@keyframes zoomCube {
   0% {
     transform: scale(1.15);
   }
@@ -58,30 +49,45 @@ a {
     transform: scale(1);
   }
 }
-.ldio-3fqy2wz3mdj div {
+.loadingSpinner {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 10001;
+  background: #99E2D0;
+  animation: 3s loader-opacity forwards;
+}
+
+.loadingSpinner__line div {
+  display: flex;
+  justify-content: center;
+  font-family: Shrikhand;
+  font-size: 285%;
+  align-items: center;
   width: 80px;
   height: 80px;
   background: #9356DC;
-  animation: ldio-3fqy2wz3mdj 1s cubic-bezier(0, 0.5, 0.5, 1) 4;
+  animation: zoomCube 1s cubic-bezier(0, 0.5, 0.5, 1) 4;
   animation-delay: 0s;
+  border-radius: 50px;
 }
 
-.ldio-3fqy2wz3mdj div:nth-child(2) {
+.loadingSpinner__line div:nth-child(2) {
   background: #a16be0;
   animation-delay: 0.1s;
 }
 
-.ldio-3fqy2wz3mdj div:nth-child(3) {
+.loadingSpinner__line div:nth-child(3) {
   background: #ae80e5;
   animation-delay: 0.2s;
 }
 
-.ldio-3fqy2wz3mdj div:nth-child(4) {
+.loadingSpinner__line div:nth-child(4) {
   background: #bc95e9;
   animation-delay: 0.3s;
 }
 
-.ldio-3fqy2wz3mdj {
+.loadingSpinner__line {
   position: relative;
   transform: translateZ(0) scale(1);
   backface-visibility: hidden;
@@ -136,7 +142,7 @@ a {
 .new-card {
   position: absolute;
   top: 1rem;
-  left: 14.3rem;
+  right: 1rem;
   padding: 0.5rem 1rem 0.5rem;
   background-color: #99E2D0;
   border-radius: 3px;
@@ -182,7 +188,7 @@ a:nth-child(n+4) article .new-card {
   border-radius: 0 15px 15px 0;
 }
 
-h1 {
+header h1 {
   display: flex;
   justify-content: space-around;
   margin: 1rem;
@@ -193,7 +199,7 @@ h1 {
   display: flex;
   justify-content: center;
   background-color: #eaeaea;
-  padding: 0.5rem;
+  padding: 0.5rem 0;
   box-shadow: inset 0px 2px 5px 1px #99E2D0;
 }
 .searcher #search {
@@ -204,9 +210,13 @@ h1 {
 
 footer {
   background-color: #353535;
+  padding-bottom: 3rem;
 }
 footer .wrapper {
-  margin: 2rem;
+  margin: 0 2rem;
+  color: white;
+}
+footer .wrapper a {
   color: white;
 }
 footer .wrapper h4 {
@@ -217,15 +227,12 @@ footer .wrapper h4 {
 footer .wrapper div {
   margin-bottom: 0.5rem;
 }
-footer .wrapper div:nth-child(2), footer .wrapper div:nth-child(3) {
+footer .wrapper a div:nth-child(1), footer .wrapper div:nth-child(2) {
   display: flex;
 }
-footer .wrapper div:nth-child(2) i, footer .wrapper div:nth-child(3) i {
+footer .wrapper a div:nth-child(1) i, footer .wrapper div:nth-child(2) i {
   min-width: 1.5rem;
   margin-right: 0.5rem;
-}
-footer .wrapper div:last-child {
-  margin-bottom: 3rem;
 }
 
 .presentation {
@@ -256,8 +263,8 @@ footer .wrapper div:last-child {
 }
 
 a article {
-  width: 90%;
-  margin: 5%;
+  box-sizing: border-box;
+  margin: 1.1rem;
   background-color: white;
   border-radius: 1rem;
   position: relative;
@@ -281,6 +288,10 @@ a .res-description i {
   align-items: center;
   margin-right: 2rem;
   font-size: 1.5rem;
+}
+
+article .heart {
+  top: 12.3rem;
 }
 
 header {
@@ -309,9 +320,10 @@ main {
   padding-top: 1rem;
   margin-top: -3rem;
 }
-.restaurant-title h1 {
+.restaurant-title h2 {
   margin: 1rem;
   font-size: 1.7rem;
+  font-family: "Shrikhand", cursive;
 }
 .restaurant-title i {
   display: flex;

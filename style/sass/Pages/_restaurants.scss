@@ -1,8 +1,9 @@
 a{
     
     article{
-        width:90%;
-        margin: 5%;
+        box-sizing: border-box;
+        //width:90%;
+        margin: 1.1rem;
         background-color: white;
         border-radius: 1rem;
         position: relative;
@@ -25,6 +26,12 @@ a{
             @include heart-i
         }
     }
+}
+
+article{
+    .heart {
+        top: 12.3rem;
+    } 
 }
 
 
