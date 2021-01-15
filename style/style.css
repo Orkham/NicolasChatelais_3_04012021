@@ -381,7 +381,7 @@ main {
   justify-content: space-between;
   position: relative;
   border-radius: 25px 25px 0 0;
-  border: 1px solid;
+  border: none;
   background-color: #f6f6f6;
   padding-top: 1rem;
   margin-top: -2rem;
