@@ -33,8 +33,12 @@ a{
 @media screen and (min-width: 960px){
     .responsiveDisplay{
         display: flex;
+        background: radial-gradient(circle, lighten($light-primary-color, 20%) 0%, lighten($light-tertiary-color, 20%) 100%);
+        
         .presentation, .fonctionnementSection{
-            width: 49%;
+            width: 49.877%;
+            background: transparent;
+            //background: radial-gradient(circle, lighten($light-primary-color, 20%) 0%, lighten($light-tertiary-color, 20%) 100%);
         }
     }
 }

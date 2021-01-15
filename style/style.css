@@ -35,9 +35,11 @@ a {
 @media screen and (min-width: 960px) {
   .responsiveDisplay {
     display: flex;
+    background: radial-gradient(circle, #d7c0f2 0%, #fcfefe 100%);
   }
   .responsiveDisplay .presentation, .responsiveDisplay .fonctionnementSection {
-    width: 49%;
+    width: 49.877%;
+    background: transparent;
   }
 }
 @keyframes loader-opacity {
@@ -270,6 +272,7 @@ footer .wrapper a div:nth-child(1) i, footer .wrapper div:nth-child(2) i {
   footer .wrapper .responsiveDisplay {
     flex-direction: row;
     justify-content: space-between;
+    background: #353535;
   }
 }
 .presentation {
@@ -304,6 +307,11 @@ footer .wrapper a div:nth-child(1) i, footer .wrapper div:nth-child(2) i {
   margin: 3rem 0 2rem 1rem;
 }
 
+/*@media screen and (min-width: 960px){
+    .
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(153,226,208,1) 100%);
+}*/
 a article {
   box-sizing: border-box;
   margin: 1.1rem;
@@ -344,7 +352,7 @@ a .res-description i {
     text-align: center;
   }
   .coloredBack a {
-    width: 49%;
+    width: 49.5%;
     display: inline-block;
   }
 }
@@ -489,6 +497,14 @@ main {
 .purple-button a:hover {
   background: linear-gradient(#ff93e1, #a16be0);
   box-shadow: 2px 2px 5px 2px #99E2D0;
+}
+
+@media screen and (min-width: 960px) {
+  .dish {
+    margin: 1rem 0.5rem;
+    width: 31%;
+    display: inline-block;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

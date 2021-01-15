@@ -142,5 +142,11 @@ $anim-speed: 500ms;
     
 }
 
-
+@media screen and (min-width: 960px){
+    .dish{
+        margin:1rem 0.5rem;
+        width:31%;
+        display: inline-block;
+    }
+}
 
