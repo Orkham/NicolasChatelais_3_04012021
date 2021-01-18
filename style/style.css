@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 * {
   margin: 0;
+  max-width: 100%;
 }
 
 body {
@@ -65,13 +66,22 @@ a {
 }
 .loadingSpinner {
   position: fixed;
+  max-width: 1600px;
   width: 100%;
   height: 100%;
   z-index: 10001;
   background: #99E2D0;
   animation: 3s loader-opacity forwards;
 }
-
+.loadingSpinner__line {
+  position: relative;
+  transform: translateZ(0) scale(1);
+  backface-visibility: hidden;
+  transform-origin: 0 0;
+  display: flex;
+  justify-content: center;
+  top: 50%;
+}
 .loadingSpinner__line div {
   display: flex;
   justify-content: center;
@@ -85,72 +95,17 @@ a {
   animation-delay: 0s;
   border-radius: 50px;
 }
-
 .loadingSpinner__line div:nth-child(2) {
   background: #a16be0;
   animation-delay: 0.1s;
 }
-
 .loadingSpinner__line div:nth-child(3) {
   background: #ae80e5;
   animation-delay: 0.2s;
 }
-
 .loadingSpinner__line div:nth-child(4) {
   background: #bc95e9;
   animation-delay: 0.3s;
-}
-
-.loadingSpinner__line {
-  position: relative;
-  transform: translateZ(0) scale(1);
-  backface-visibility: hidden;
-  transform-origin: 0 0;
-  display: flex;
-  justify-content: center;
-  top: 50%;
-}
-
-.fonctionnement {
-  display: flex;
-  flex-direction: column;
-}
-.fonctionnement__step {
-  display: flex;
-  justify-content: flex-start;
-  padding: 2rem;
-  padding-bottom: 3rem;
-  background-color: #f6f6f6;
-  border-radius: 1.5rem;
-  margin: 1rem;
-  margin-left: 2rem;
-  position: relative;
-  box-shadow: 2px 2px 5px 1px #99E2D0;
-}
-.fonctionnement__step--number {
-  background-color: #9356DC;
-  padding: 0.2rem;
-  border-radius: 50%;
-  color: white;
-  min-width: 1rem;
-  text-align: center;
-  position: absolute;
-  top: 1.7rem;
-  left: -0.6rem;
-}
-.fonctionnement__step i {
-  padding-left: 2rem;
-  min-width: 10%;
-  margin: auto;
-  position: absolute;
-  left: 1rem;
-  color: #9356DC;
-}
-.fonctionnement__step p {
-  padding-left: 2rem;
-  margin: auto;
-  position: absolute;
-  left: 4rem;
 }
 
 .new-card {
@@ -275,6 +230,79 @@ footer .wrapper a div:nth-child(1) i, footer .wrapper div:nth-child(2) i {
     background: #353535;
   }
 }
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+}
+.fonctionnement__step {
+  display: flex;
+  justify-content: flex-start;
+  padding: 2rem;
+  padding-bottom: 3rem;
+  background-color: #f6f6f6;
+  border-radius: 1.5rem;
+  margin: 1rem;
+  margin-left: 2rem;
+  position: relative;
+  box-shadow: 2px 2px 5px 1px #99E2D0;
+}
+.fonctionnement__step--number {
+  background-color: #9356DC;
+  padding: 0.2rem;
+  border-radius: 50%;
+  color: white;
+  min-width: 1rem;
+  text-align: center;
+  position: absolute;
+  top: 1.7rem;
+  left: -0.6rem;
+}
+.fonctionnement__step i {
+  padding-left: 2rem;
+  min-width: 10%;
+  margin: auto;
+  position: absolute;
+  left: 1rem;
+  color: #9356DC;
+}
+.fonctionnement__step p {
+  padding-left: 2rem;
+  margin: auto;
+  position: absolute;
+  left: 4rem;
+}
+
+a article {
+  box-sizing: border-box;
+  margin: 1.1rem;
+  background-color: white;
+  border-radius: 1rem;
+  position: relative;
+  box-shadow: 2px 2px 5px 1px #99E2D0;
+}
+a article img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+  height: 11rem;
+}
+a article .heart {
+  top: 12.3rem;
+}
+a .res-description {
+  display: flex;
+  justify-content: space-between;
+}
+a .res-description__title {
+  margin: 1rem;
+}
+a .res-description i {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+  font-size: 1.5rem;
+}
+
 .presentation {
   padding: 2rem;
   display: flex;
@@ -305,42 +333,6 @@ footer .wrapper a div:nth-child(1) i, footer .wrapper div:nth-child(2) i {
 }
 .presentation h2 {
   margin: 3rem 0 2rem 1rem;
-}
-
-/*@media screen and (min-width: 960px){
-    .
-    background: rgb(63,94,251);
-    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(153,226,208,1) 100%);
-}*/
-a article {
-  box-sizing: border-box;
-  margin: 1.1rem;
-  background-color: white;
-  border-radius: 1rem;
-  position: relative;
-  box-shadow: 2px 2px 5px 1px #99E2D0;
-}
-a article img {
-  object-fit: cover;
-  width: 100%;
-  border-radius: 1rem 1rem 0 0;
-  height: 11rem;
-}
-a article .heart {
-  top: 12.3rem;
-}
-a .res-description {
-  display: flex;
-  justify-content: space-between;
-}
-a .res-description__title {
-  margin: 1rem;
-}
-a .res-description i {
-  display: flex;
-  align-items: center;
-  margin-right: 2rem;
-  font-size: 1.5rem;
 }
 
 @media screen and (min-width: 960px) {

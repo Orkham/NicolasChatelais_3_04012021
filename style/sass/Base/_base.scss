@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    max-width: 100%;
 }
 
 body{
@@ -38,7 +39,6 @@ a{
         .presentation, .fonctionnementSection{
             width: 49.877%;
             background: transparent;
-            //background: radial-gradient(circle, lighten($light-primary-color, 20%) 0%, lighten($light-tertiary-color, 20%) 100%);
         }
     }
 }
