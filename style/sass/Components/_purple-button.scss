@@ -1,0 +1,20 @@
+.purple-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    a{
+        background: linear-gradient($secondary-color,$primary-color);
+        color:#fff;
+        border-radius: 2rem;
+        padding: 1rem;
+        margin-bottom: 2rem;
+        box-shadow: 2px 2px 5px 1px $tertiary-color;
+        display:flex;
+        justify-content: center;
+        width:40%;
+        &:hover{
+            background: linear-gradient($light-secondary-color,$light-primary-color);
+            box-shadow: 2px 2px 5px 2px $tertiary-color;
+        }
+    }
+}
