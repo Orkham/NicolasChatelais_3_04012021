@@ -62,7 +62,7 @@ $anim-speed: 500ms;
     
     .recipe{
         
-        /*** slide ***/
+        /*** loading-slide ***/
         opacity:0;
         animation: slide-vertical 500ms; 
         animation-fill-mode:forwards;
