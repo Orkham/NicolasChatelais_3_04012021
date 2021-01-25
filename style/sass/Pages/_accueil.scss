@@ -13,6 +13,9 @@
         margin-left: 2rem;
         position : relative;
         box-shadow: 2px 2px 5px 1px $tertiary-color;
+        &:hover {
+            background: darken(#f6f6f6,2%);
+        }
         &--number{
             background-color: $primary-color;
             padding: 0.2rem;

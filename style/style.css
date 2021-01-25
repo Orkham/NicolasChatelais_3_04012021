@@ -154,6 +154,27 @@ a:nth-child(n+4) article .new-card {
   border-radius: 0 15px 15px 0;
 }
 
+.purple-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.purple-button a {
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: #fff;
+  border-radius: 2rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 2px 2px 5px 1px #99E2D0;
+  display: flex;
+  justify-content: center;
+  width: 40%;
+}
+.purple-button a:hover {
+  background: linear-gradient(#ff93e1, #a16be0);
+  box-shadow: 2px 2px 5px 2px #99E2D0;
+}
+
 header h1 {
   display: flex;
   justify-content: space-around;
@@ -242,6 +263,9 @@ footer .wrapper a div:nth-child(1) i, footer .wrapper div:nth-child(2) i {
   margin-left: 2rem;
   position: relative;
   box-shadow: 2px 2px 5px 1px #99E2D0;
+}
+.fonctionnement__step:hover {
+  background: #f1f1f1;
 }
 .fonctionnement__step--number {
   background-color: #9356DC;
@@ -465,27 +489,6 @@ main {
 .dish .recipe:hover .fa-check-circle::before {
   transform: rotate(360deg);
   transition: transform 1s;
-}
-
-.purple-button {
-  display: flex;
-  justify-content: center;
-  margin-top: 3rem;
-}
-.purple-button a {
-  background: linear-gradient(#FF79DA, #9356DC);
-  color: #fff;
-  border-radius: 2rem;
-  padding: 1rem;
-  margin-bottom: 2rem;
-  box-shadow: 2px 2px 5px 1px #99E2D0;
-  display: flex;
-  justify-content: center;
-  width: 40%;
-}
-.purple-button a:hover {
-  background: linear-gradient(#ff93e1, #a16be0);
-  box-shadow: 2px 2px 5px 2px #99E2D0;
 }
 
 @media screen and (min-width: 960px) {
